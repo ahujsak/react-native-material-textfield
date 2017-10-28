@@ -494,6 +494,7 @@ export default class TextField extends PureComponent {
               onSubmitEditing={this.props.onSubmitEditing}
               value={value}
               ref={this.updateRef}
+              autoCapitalize={this.props.autoCapitalize ? this.props.autoCapitalize : 'none'}
             />
 
             {this.renderAffix('suffix', active, focused)}
